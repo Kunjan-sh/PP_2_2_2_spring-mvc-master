@@ -9,19 +9,19 @@
 <h1>List of Cars</h1>
 <table>
     <thead>
-        <tr>
-            <th scope = "col">Model</th>
-            <th scope = "col">Series</th>
-            <th scope = "col">Color</th>
-        </tr>
+    <tr>
+        <th scope="col">Model</th>
+        <th scope="col">Series</th>
+        <th scope="col">Color</th>
+    </tr>
     </thead>
     <tbody>
-    <tr th:each = "car : ${cars}">
-        <td th:text = "${car.model}">Model</td>
-        <td th:text = "${car.series}">Series</td>
-        <td th:text = "${car.color}">Color</td>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.model}">Model</td>
+        <td th:text="${car.series}">Series</td>
+        <td th:text="${car.color}">Color</td>
 
-</tr>
+    </tr>
     </tbody>
 </table>
 
